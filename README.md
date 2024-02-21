@@ -3,3 +3,6 @@
 Nombre: Fernando Fabricio Quispe Yujra
 #### web service
 ## Mi primer servidor web
+python -m http.server
+
+- crear un index.html
