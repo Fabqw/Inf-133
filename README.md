@@ -6,3 +6,4 @@ Nombre: Fernando Fabricio Quispe Yujra
 python -m http.server
 
 - crear un index.html
+- def r
