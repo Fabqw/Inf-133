@@ -9,3 +9,6 @@ def run(server_class=HTTPServer, handler_class=SimpLeHTTPRequestHandler):
     except KeyboardInterrupt:
         print('Apagando servidor web')
         httpd.socked.close()
+
+if _name_ == "_main_":
+    run()
