@@ -12,7 +12,7 @@ python -m http.server
         server_address = ('', 8000)
         httpd = server_class(server_addres, handler_class)
         print('Iniciando servidor web en http://localhost:8000/')
-        httpd.server_forever()
+        httpd.serve_forever()
     except KeyboardInterrupt:
         print('Apagando servidor web')
         httpd.socked.close()       

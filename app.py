@@ -1,14 +1,13 @@
-from http.server import HTTPServer, SimpLeHTTPRequestHandler
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-def run(server_class = HTTPServer, handler_class = SimpLeHTTPRequestHandler):
+def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
     try:
-        server_address = ('',8000)
+        server_address = ('', 8000)
         httpd = server_class(server_address, handler_class)
-        print('Iniciando servidor web en http://localhost:8000/')
         httpd.serve_forever()
-    except KeyboardInterrupt:
-        print('Apagando servidor web')
-        httpd.socked.close()
-
+    except KeyboardInterupt:
+        print('apagando server')
+        http.socket.close()
+        
 if __name__ == "__main__":
     run()
